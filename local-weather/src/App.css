@@ -3,3 +3,17 @@ h1 {
   background-color: darkslateblue;
   padding: 1em;
 }
+
+.container {
+  border-radius: 1em;
+  border: black solid 1px;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+#main-temp {
+  right: 0;
+}
