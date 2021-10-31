@@ -12,7 +12,7 @@ class WeatherCard extends React.Component {
             loaded: false
         }
     }
-    handleConversions(type)
+    handleConversions()
     {
 
     }
@@ -54,9 +54,19 @@ class WeatherCard extends React.Component {
         {
           return (
             <div className="container">
-                <img src={this.state.data[0]} alt={`icon of  {this.state.data[1]}`}/>
+                <h2 className={"titles"}>Your Weather:</h2>
+                <span><img src={this.state.data[0]} alt={`icon of  {this.state.data[1]}`}/></span>
                 <span id={"main-temp"}><h3>{this.state.data[3]}&#8451;</h3></span>
-                <p>{this.state.data}</p>
+                <p>{this.state.data[1]}</p>
+                <b><p className={"info"}>{this.state.data[6]}</p></b>
+                <hr className={"separator"}/>
+                <div className={"second-container"}>
+                    <h3 className={"titles"}>Today's Temps:</h3>
+                    <p><b>Min:</b> {this.state.data[3]}</p>
+                    <p><b>Max:</b> {this.state.data[4]}</p>
+                    <p><b>Feels Like:</b> {this.state.data[5]}</p>
+                </div>
+                <hr className="separator"/>
                 {button}
             </div>
           );
