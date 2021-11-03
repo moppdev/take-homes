@@ -8,18 +8,20 @@ h1 {
   text-decoration: underline;
 }
 
-.container {
+.contain {
   border-radius: 1em;
   border: black solid 1px;
   padding: 1em;
   margin-top: 2em;
   margin-bottom: 2em;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 10em;
+  margin-right: 10em;
+  text-align: center;
 }
 
 #main-temp {
   right: 0;
+  display: inline-block;
 }
 
 .info {
